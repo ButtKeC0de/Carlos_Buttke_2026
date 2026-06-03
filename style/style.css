@@ -1,5 +1,11 @@
 header{
-    background-color: rgb(14, 14, 130);
-    color: aliceblue;
+    background-color: rgb(255, 196, 0);
+    color: rgb(0, 0, 0);
     padding: 2px;
+    
+
+    border-bottom: 1px solid rgb(233, 199, 90);
+    align-content: center;
+    align-items: center;
+    text-align: center;
 }

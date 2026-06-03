@@ -11,22 +11,20 @@
     </tr>
 
     <?php
-    
+
 
     $sqlUsuarios = "SELECT * FROM users";
 
-    $resultadoUsuarios = $conn -> query($sqlUsuarios);
+    $resultadoUsuarios = $conn->query($sqlUsuarios);
 
-    while($linha = $resultadoUsuarios->fetch_assoc()){
-        echo "<tr>
-        
-            <td>" . $linha["id"] . "</td>
-            <td>" . $linha["username"] . "</td>
-            <td>" . $linha["password"] . "</td>
-        
-        </tr>";
+    while ($linha = $resultadoUsuarios->fetch_assoc()) {
+        echo "<tr>\n        \n            <td>" . $linha["id"] . "</td>\n        
+            <td>" . $linha["username"] . "</td>\n            <td>" . $linha["password"] . "</td>\n            <td>\n    
+                        <form method='POST' onsubmit='return confirm(\'Confirma exclusão deste usuário?\');'>\n                  
+                          <input type='hidden' name='delete_id' value='" . $linha["id"] . "'>\n                    <button type='submit'>Excluir</button>\n               
+                           </form>\n            </td>\n        \n        </tr>";
     }
-    
+
     ?>
 
 </table>
