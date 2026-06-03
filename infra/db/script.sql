@@ -8,4 +8,4 @@ CREATE TABLE usuario (
     senha VARCHAR(255) NOT NULL
 );
 
-INSERT INTO usuario (usuario, senha) VALUE ('admin','123');
+INSERT INTO usuario (usuario, senha) VALUES ('admin','1234');
