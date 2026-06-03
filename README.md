@@ -20,3 +20,6 @@ Cadastro de Novos Usuários (Create): Fornece um formulário na área restrita q
 Feedback de Ações: Emite alertas na tela informando se o cadastro do novo usuário foi realizado com sucesso ou se ocorreu um erro, e exibe mensagens de falha caso o login seja inválido.
 
 Encerramento de Sessão (Logout): Permite que o usuário desconecte do sistema, destruindo os dados da sessão atual e redirecionando-o de volta para a tela inicial.
+
+Implementação da Funcionalidade
+A exclusão foi desenvolvida adicionando um botão "Excluir" ao lado de cada usuário na tabela de listagem. Esse botão passa o `id` do usuário via método GET para o arquivo responsável por processar a exclusão. O script recebe o ID, valida a informação e executa uma query `DELETE` no banco de dados utilizando Prepared Statements para garantir a segurança.
