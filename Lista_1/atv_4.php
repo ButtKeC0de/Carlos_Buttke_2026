@@ -6,7 +6,7 @@
 //números e caracteres especiais.
 
 
-$tamanho = 8; 
+$tamanho = 825; 
 $alfabeto = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+-=[]{}|;:,.<>?';
 
 
