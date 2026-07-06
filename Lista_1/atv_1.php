@@ -1,6 +1,5 @@
 <?php
 
-
 function calcularFormula($x,$y){
     
     if ($x + $y == 0){
@@ -19,3 +18,4 @@ function calcularFormula($x,$y){
     echo "o valor de y é: $y_usuario <br>";
 
 echo calcularFormula($x_usuario, $y_usuario);
+
